@@ -57,7 +57,7 @@ type TransactionRead struct {
 		UpdatedAt    time.Time `json:"updated_at"`
 		User         string    `json:"user"`
 		GroupTitle   *string   `json:"group_title"`
-		Transactions struct {
+		Transactions []struct {
 			TransactionJournalID string    `json:"transaction_journal_id"`
 			Type                 string    `json:"type"`
 			Date                 time.Time `json:"date"`

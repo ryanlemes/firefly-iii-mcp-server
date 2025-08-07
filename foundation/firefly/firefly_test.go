@@ -98,8 +98,8 @@ func TestClient_CreateTransaction(t *testing.T) {
 			t.Fatalf("unexpected error: %v", err)
 		}
 
-		if transaction.Data.Attributes.Transactions.Description != "test transaction" {
-			t.Fatalf("unexpected transaction description: %s", transaction.Data.Attributes.Transactions.Description)
+		if transaction.Data.Attributes.Transactions[0].Description != "test transaction" {
+			t.Fatalf("unexpected transaction description: %s", transaction.Data.Attributes.Transactions[0].Description)
 		}
 	})
 
