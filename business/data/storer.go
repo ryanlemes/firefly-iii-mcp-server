@@ -3,11 +3,11 @@ package data
 import (
 	"context"
 
-	"github.com/ryanlemes/firefly-iii-mcp-server/business/firefly"
+	"github.com/ryanlemes/firefly-iii-mcp-server/business/data/firefly"
 )
 
 type AccountStorer interface {
-	List(ctx context.Context) (firefly.Account, error)
+	List(ctx context.Context) ([]firefly.Account, error)
 }
 
 type TransactionStorer interface {
